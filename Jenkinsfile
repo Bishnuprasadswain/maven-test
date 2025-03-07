@@ -35,7 +35,7 @@ stage(backup)
 		  {
   steps{
 
-	nexusArtifactUploader artifacts: [[artifactId: 'myweb', classifier: '', file: 'target/myweb.jar', type: 'jar']], credentialsId: 'nexus', groupId: 'com.idream', nexusUrl: '52.66.179.54:8081/repository/maven-releases/', nexusVersion: 'nexus2', protocol: 'http', repository: 'maven-releases', version: '1.5'
+	nexusArtifactUploader artifacts: [[artifactId: 'app', classifier: '', file: 'target/myweb.jar', type: 'jar']], credentialsId: 'NEXUS1', groupId: 'com.idream', nexusUrl: '3.108.217.68:8081/repository/maven-releases/', nexusVersion: 'nexus2', protocol: 'http', repository: 'maven-releases', version: '1.0'
 	  
   }
 	
