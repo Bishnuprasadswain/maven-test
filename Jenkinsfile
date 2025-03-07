@@ -50,7 +50,7 @@ pipeline {
   {
    agent any
     steps {
-	 withSonarQubeEnv('theproject')
+	 withSonarQubeEnv('sonarenv')
 	 {
 	  sh "mvn clean package sonar:sonar -Dsonar.projectKey=tokensonar -Dsonar.projectName='theproject'"
 	 }
